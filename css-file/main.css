@@ -8,14 +8,15 @@ body #navbar{
     width:100%;
     height:55px;
     /* border:2px solid red;  */
-    background-color:mediumspringgreen;
+    background-color: rgba(0, 0,0, 0.89);
 }
 body #navbar #span{
     margin-left:25px;
     padding:10px;
     font-size: 30px;
+    color:white;
     /* border:2px solid red; */
-    text-shadow: 2px 4px 15px black;
+    text-shadow: 2px 4px 15px white;;
     font-family: 'Balsamiq Sans', cursive;
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -66,12 +67,14 @@ body #list li a #icon{
 body #home{
     position: relative;
     /* border:2px solid red; */
-     background-color:mediumspringgreen;
+     background-color: rgba(0, 0,0, 0.89);
     width:100%;
     height:500px;
 }
 body #home #homeheader{
     position: relative;
+    color:white;
+    opacity: 0.99;
     width:49%;
     height:500px;
     padding-top:150px;
@@ -81,12 +84,27 @@ body #home #homeheader{
     font-family: 'Noto Sans JP', sans-serif;
 }
 body #home #homeheader #homespan{
-    opacity: 0.5;
+    border:2px solid rgb(24, 235, 186);
+    opacity:0.99;
+    padding:6px 20px;
+    font-size: 23px;
+    background-color:rgb(24, 235, 186);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+} 
+body #home #homeheader .yadav{
+    position: absolute;
+    margin-top:35px;
+    /* border:2px solid red; */
 }
 body #home #developer{
+    color:white;
+    opacity: 0.99;
     position:absolute;
     top:240px;
     margin-left:40px;
+    margin-top:30px;
     padding:10px;
     font-size:22px;
     font-weight: bolder;
@@ -94,7 +112,81 @@ body #home #developer{
     font-family: 'Noto Sans JP', sans-serif;
     /* border:2px solid red;  */
 }
-body #home #resume{
+body #home .communication{
+    position: absolute;
+    width:400px;
+    top:330px;
+    left:50px;
+    /* border:2px solid red;  */
+    color:white;
+    padding:10px 0px;
+}
+body #home .communication #mail{
+    /* border:2px solid red; */
+    color:white;
+    cursor: pointer;
+    padding:6px;
+    margin-right:15px; 
+    font-size: 20px;
+}
+body #home .communication #mail:hover{
+    color:mediumseagreen;
+    background-color: white;
+    border-radius:5px;
+}
+body #home .communication #github{
+    /* border:2px solid red; */
+    color:white;
+    cursor: pointer;
+    padding:6px;
+    margin-right:15px; 
+    font-size: 20px;
+}
+body #home .communication #github:hover{
+    color:mediumseagreen;
+    background-color: white;
+    border-radius:5px;
+}
+body #home .communication #linked{
+    /* border:2px solid red; */
+    color:white;
+    cursor: pointer;
+    padding:6px;
+    margin-right:15px; 
+    font-size: 20px;
+}
+body #home .communication #linked:hover{
+    color:mediumseagreen;
+    background-color: white;
+    border-radius:5px;
+}
+body #home .communication #phone{
+    /* border:2px solid red; */
+    color:white;
+    cursor: pointer;
+    padding:6px;
+    margin-right:15px; 
+    font-size: 20px;
+}
+body #home .communication #phone:hover{
+    color:mediumseagreen;
+    background-color: white;
+    border-radius:5px;
+}
+body #home .communication #instagram{
+    /* border:2px solid red; */
+    color:white;
+    cursor: pointer;
+    padding:6px;
+    margin-right:15px; 
+    font-size: 20px;
+}
+body #home .communication #instagram:hover{
+    color:mediumseagreen;
+    background-color: white;
+    border-radius:5px;
+}
+/* body #home #resume{
     position:absolute;
     top:320px;
     margin-left:100px;
@@ -116,7 +208,7 @@ body #home #resume button:hover{
     background-color:rgb(12, 75, 51);
     box-shadow:5px 5px 20px green ;
     color:white;
-}
+} */
 body #home #imagepart{
     position: absolute;
     top:50px;
@@ -133,20 +225,345 @@ body #home #imagepart{
     box-shadow:5px 5px 20px black ;
     /* border-bottom-left-radius:20px; */
     height:400px;
-    background-image: url("IMG_2092.jpeg");
+    background-image: url("/images/IMG_2092.jpeg");
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 body #aboutme{
     width:100%;
-    height:600px;
+    height:650px;
+    background-color: rgba(0, 0,0, 0.89);
+    color:white;
+    /* border:2px solid red; */
+}
+body #aboutme #aboutimage{
+    width:49%;
+    height:400px;
+    float:left;
+    /* border:2px solid red; */
+    background-image: url("/images/ab-img.png");
+    margin-top: 100px;
+    margin-left: 50px;
+    /* background-color:  rgba(0, 0,0, 0.89); */
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body #aboutme #about{
+    /* border:2px solid red; */
+    width:45%;
+    float:left;
+    padding-top:40px;
+    padding-left:20px;
+    margin-top: 70px;
+    font-size: 15px;
+    opacity:0.6;
+    font-family: 'Varela Round', sans-serif;
+}
+body #aboutme #maincontent{
+    width:47%;
+    height:450px;
+    float:left;
+    padding:25px;
+    word-spacing: 3px;
+    /* border:2px solid red; */
 }
 body #education{
     width:100%;
     height:600px;
 }
+body #education #edu_content{
+    padding:15px;
+    font-family: 'Varela Round', sans-serif;
+    color:white;
+    background-color:  rgba(0, 0,0, 0.89);
+    /* background-color: black; */
+    text-align: center;
+    /* border:2px solid red; */
+}
+body #education #edu_content strong{
+    opacity: 0.7;
+}
+body #education #edu_mainpart {
+    width:100%;
+    height:534px;
+    background-color:  rgba(0, 0,0, 0.89);
+    /* border:2px solid red; */
+}
+body #education #edu_mainpart #graduation{
+    /* border:2px solid red; */
+    margin-top:44px;
+    margin-right:44px;
+    margin-left:95px;
+    height:350px;
+    width:25%;
+    float:left;
+    background-color:rgb(244, 196, 48);
+    border-radius: 7px;
+    box-shadow:5px 5px 15px black;
+}
+body #edu_mainpart #graduation #gra_heading{
+    color:black;
+    /* border:2px solid red; */
+    padding:10px;
+    text-align:center;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body .graduationcontent{
+    padding:15px;
+    color:black;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    /* border:2px solid red;  */
+}
+body #education #edu_mainpart #secondary{
+    /* border:2px solid red; */
+    margin-top:44px;
+    margin-left:44px;
+    margin-right:44px;
+    height:350px;
+    width:25%;
+    border-radius: 7px;
+    background-color:rgba(10, 193, 123, 0.9);
+    float:left;
+    box-shadow:5px 5px 15px black ;
+}
+
+body #education #edu_mainpart #secondary #secondary_education{
+    color:black;
+    padding:10px;
+    text-align:center;
+    font-family: 'Varela Round', sans-serif;   
+}
+
+body .secondarycontent{
+    padding:15px;
+    color:black;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    /* border:2px solid red;  */
+}
+
+body #education #edu_mainpart #primary #primary_education{
+    color:black;
+    padding:10px;
+    text-align:center;
+    font-family: 'Varela Round', sans-serif;   
+}
+body #education #edu_mainpart #primary{
+    /* border:2px solid red; */
+    margin:44px;
+    box-shadow:5px 5px 10px black;
+    height:350px;
+    background-color:rgba(235, 73, 4, 0.9);
+    width:25%;
+    float:left;
+    border-radius: 7px;
+}
+body .primarycontent{
+    padding:15px;
+    color:black;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+    /* border:2px solid red;  */
+}
 body #technicalskills{
+    background-color:  rgba(0, 0,0, 0.89);
     width:100%;
     height:600px;
+    border:2px solid red;
+}
+
+body #technicalskills #tech_content{
+    padding:15px;
+    text-align:center;
+    color:white;
+    /* border:2px solid red; */
+    font-family: 'Varela Round', sans-serif;
+}
+body #technicalskills #tech_content span{
+    opacity: 0.8;
+}
+
+body #expirence{
+    background-color: rgba(0,0,0,0.89);
+    width:100%;
+    height:600px;
+    border:2px solid red;
+}
+body #expirence #exp_content{
+    padding:15px;
+
+    text-align:center;
+    color:white;
+    /* border:2px solid red; */
+    font-family: 'Varela Round', sans-serif;
+}
+body  #expirence #exp_content span{
+    opacity: 0.8;
+}
+body #project {
+    background-color: rgba(0,0,0,0.89);
+    width:100%;
+    height:600px;
+    border:2px solid red;
+}
+body #project #pro_content{
+    padding:15px;
+
+    text-align:center;
+    color:white;
+    /* border:2px solid red; */
+    font-family: 'Varela Round', sans-serif;
+}
+body  #project #pro_content span{
+    opacity: 0.8;
+}
+body #contact_me{
+    background-color: rgba(0,0,0,0.89);
+    width:100%;
+    height:450px;
+    /* border:2px solid red; */
+}
+body #contact_me #con_content{
+    padding:15px;
+
+    text-align:center;
+    color:white;
+    /* border:2px solid red; */
+    font-family: 'Varela Round', sans-serif;
+}
+body  #contact_me #con_content span{
+    opacity: 0.8;
+}
+
+body #contact_me .contact{
+    /* border:2px solid red; */
+    height:100;
+    margin-top:20px;
+}
+
+body #contact_me #address{
+    /* border:2px solid red; */
+    width:20%;
+    height:250px;
+    margin-left:55px;
+    background-color:rgb(244, 196, 48);
+    float:left;
+    border-radius:5px;
+    box-shadow:5px 5px 15px rgb(244, 196, 48);
+}
+
+body #contact_me #address .fa-location-arrow{
+    margin-top:25px;
+    margin-left:100px;
+    padding:22px;
+    color:black;
+    border:2px solid black;
+    border-radius:50%;
+    font-size:20px;
+}
+body #contact_me #address pre{
+    /* border:2px solid red; */
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+    padding:10px;
+    font-size: 18px;
+}
+
+body #contact_me #mail{
+    /* border:2px solid red; */
+    width:20%;
+    height:250px;
+    margin-left:55px;
+    background-color:rgba(10, 193, 123, 0.9);
+    float:left;
+    border-radius: 5px;
+    box-shadow:5px 5px 15px rgba(10, 193, 123);
+}
+
+body #contact_me #mail .fa-envelope{
+    margin-top:25px;
+    margin-left:100px;
+    padding:20px;
+    color:black;
+    border:2px solid black;
+    border-radius:50%;
+    font-size:25px;
+}
+body #contact_me #mail p{
+    /* border:2px solid red; */
+    padding:10px;
+    font-size: 17px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+body #contact_me #phone{
+    /* border:2px solid red; */
+    width:20%;
+    height:250px;
+    margin-left:55px;
+    background-color:rgba(235, 73, 4, 0.9);
+    float:left;
+    border-radius: 5px;
+    box-shadow:5px 5px 15px rgba(235,73,4,0.9);
+}
+
+body #contact_me #phone .fa-phone{
+    
+    margin-top:25px;
+    margin-left:110px;
+    padding:20px;
+    color:black;
+    border:2px solid black;
+    border-radius:50%;
+    font-size:25px;
+}
+
+body #contact_me #phone  p{
+    /* border:2px solid red; */
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+
+body #contact_me #linkedin{
+    /* border:2px solid red; */
+    position:relative;
+    width:20%;
+    height:250px;
+    margin-left:55px;
+    background-color:#00868b;
+    border-radius:5px;
+    float:left;
+    box-shadow:5px 5px 15px #00868b;
+}
+
+body #contact_me #linkedin .fa-linkedin-square{
+    
+    margin-top:25px;
+    margin-left:100px;
+    padding:20px;
+    color:black;
+    border:2px solid black;
+    border-radius:50%;
+    font-size:25px;
+}
+body #contact_me #linkedin a{
+    position: absolute;
+    /* border:2px solid red; */
+    padding:15px;
+    font-size: 22px;
+    margin-top:15px;
+    margin-left:10px;
+    text-align: center;
+    text-decoration: none;
+    color:black;
+    font-family: 'Varela Round', sans-serif;
+}
+body #contact_me #linkedin a:hover{
+    color:white;
 }
